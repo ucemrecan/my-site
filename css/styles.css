@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+h1 {
+  font-size: 5.625rem;
+  /* Eğer dinamik boyutlamak istiyorsak yüzde kullanmalıyız.100% = 16px , 90px = 5.625 --> 562.5%
+  * ya da em kullanarak dinamik boyutlandırırız. 1em = 16px
+  * 16px = 100% = 1em
+  * % ve em üst etiketi parents olarak alır yani değerleri toplayıp yansıtır. Eğer bunu istemiyorsak px kullanmalıyız ya da
+  rem kullanmalıyız. rem (root em) kök olarak alır ve parents yani miras almaz.
+  *margin: 0 auto; bu kod top ve bottom'ı 0 kabul eder
+                    sağ ve solu oto ayarlar.
+                    witdh: 10%; */
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  color: #66BFBF;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  color: #66BFBF;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+a {
+  color: #11999E;
+}
+
+.top-container {
+  background-color: #E4F9F5;
+  position: relative;
+  padding-top: 100px;
+}
+
+.cloud-top {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+
+}
+
+.cloud-bottom {
+  position:absolute;
+  bottom: 300px;
+  left: 300px;
+}
+
+.coding-pic {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.building-pic {
+  width: 25%;
+  float: right; /* float, sadece wrapping(etrafını sarmak) için kullanılır. Bu tarz durumlarda position ya da margin yerine float daha uygundur. */
+  margin-left: 30px;
+}
+
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+  line-height: 2;
+
+}
+
+.bottom-container {
+  background-color: #66BFBF;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.contact-me{
+  padding-bottom: 40px;
+}
+
+.footer-link {
+  color: #11999E;
+}
+
+.copyright {
+  color: #EAF6F6;
+}
+
+.BUTTON_MVO {
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   color: white;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 17px;
+   font-weight: 100;
+   padding: 17px;
+   background-color: #66BFBF;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+   margin-top: 25px;
+}
+
+hr  {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #EAF6F6;
+  width: 8%;
+  border-width: 8px;
+  margin: 100px auto;
+}
+
+.profile {
+  margin:50px;
+}
